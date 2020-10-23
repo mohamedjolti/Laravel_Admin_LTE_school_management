@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css') }}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.css') }}">
+
+  
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -159,7 +161,7 @@
     <a href="index3.html" class="brand-link">
       <img src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">School Management</span>
     </a>
 
     <!-- Sidebar -->
@@ -167,7 +169,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
+          <img src="data:image/jpeg;base64,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" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Mohamed JOLTI</a>
@@ -183,526 +185,39 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
+                School
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
+                <a href="teachers" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p><S>Teachers</S></p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                  <p>Groupes </p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index3.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>Students </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Classes </p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Layout Options
-                <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/boxed.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Charts
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tree"></i>
-              <p>
-                UI Elements
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/icons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Icons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/buttons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Buttons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/sliders.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sliders</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/modals.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Modals & Alerts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/navbar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Navbar & Tabs</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/timeline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Timeline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/ribbons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Ribbons</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Forms
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Advanced Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Tables
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-header">EXAMPLES</li>
-          <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
-              <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
-              <p>
-                Gallery
-              </p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-                Mailbox
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inbox</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Compose</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/read-mail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Read</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Pages
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/examples/invoice.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Invoice</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/profile.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Profile</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/e-commerce.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>E-commerce</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Projects</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Add</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-edit.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Edit</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-detail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Detail</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/contacts.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contacts</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-plus-square"></i>
-              <p>
-                Extras
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/examples/login.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Login</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/register.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Register</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/forgot-password.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Forgot Password</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/recover-password.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Recover Password</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/lockscreen.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lockscreen</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/legacy-user-menu.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Legacy User Menu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/language-menu.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Language Menu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/404.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 404</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/500.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 500</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/pace.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pace</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/blank.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Blank Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="starter.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Starter Page</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-header">MISCELLANEOUS</li>
-          <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.0" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
-              <p>Documentation</p>
-            </a>
-          </li>
-          <li class="nav-header">MULTI LEVEL EXAMPLE</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-circle"></i>
-              <p>
-                Level 1
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Level 2
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-header">LABELS</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-danger"></i>
-              <p class="text">Important</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Warning</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-info"></i>
-              <p>Informational</p>
-            </a>
-          </li>
+      
+        
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -711,97 +226,9 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
+  
         <!-- Small boxes (Stat box) -->
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
-
-                <p>New Orders</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                <p>Bounce Rate</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
-
-                <p>User Registrations</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                <p>Unique Visitors</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-        </div>
-        <!-- /.row -->
-        <!-- Main row -->
-        <div class="row">
-          <!-- Left col -->
-         <h1>Hi</h1>
-        </div>
+              @yield("content")
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
     </section>
@@ -809,10 +236,9 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.0.5
+    <strong>Copyright &copy; 2020 <a href="https://github.com/mohamedjolti?tab=repositories">Dashbord School Management</a>.</strong>
+    By Mohamed JOLTI
+
     </div>
   </footer>
 

@@ -25,28 +25,29 @@
                          </button>
                          </div>
                          <div class="modal-body">
-                         <form role="form">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Full name</label>
-                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Full name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Speciality</label>
-                    <input type="text" name="speciality" class="form-control" id="exampleInputPassword1" placeholder="Speciality">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Yerars of experience </label>
-                    <input type="text" name="year_exp" class="form-control" id="exampleInputPassword1" placeholder="Years of exprence">
-                  </div>
-           
-                </div>
-                <!-- /.card-body -->
+                         {!! Form::open(['route' => 'teachers.store',"method"=>"Post"])!!}
 
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
+<div class="card-body">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Full name</label>
+    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Full name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Speciality</label>
+    <input type="text" name="speciality" class="form-control" id="exampleInputPassword1" placeholder="Speciality">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Yerars of experience </label>
+    <input type="text" name="year_exp" class="form-control" id="exampleInputPassword1" placeholder="Years of exprence">
+  </div>
+
+</div>
+<!-- /.card-body -->
+
+<div class="card-footer">
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+{!! Form::close() !!}
                          </div>
                          <div class="modal-footer justify-content-between">
                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -94,9 +95,9 @@
                     <td>{{$teacher->speciality}}</td>
                     <td> {{$teacher->number_years_experience}}</td>
                     <td>
-                    <button type="button" class="btn btn-block btn-info" data-toggle="modal" data-target="#modal-info">Edit</button>
+                    <button type="button" class="btn btn-block btn-info" data-toggle="modal" data-target="#modal-info{{$teacher->id}}">Edit</button>
                     <button type="button" class="btn btn-block btn-danger" data-toggle="modal" data-target="#modal-danger{{$teacher->id}}">Delete</button>
-                    <div class="modal fade" id="modal-info">
+                    <div class="modal fade" id="modal-info{{$teacher->id}}">
  
         <!-- /.edit-dialog -->
                             <div class="modal-dialog">
@@ -108,20 +109,20 @@
                                 </button>
                                 </div>
                                 <div class="modal-body">
-                                <form role="form" method="POST" >
+                                {!! Form::open(['route' => ['teachers.update',$teacher],"method"=>"Put",])!!}
 
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Full name</label>
-                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Full name">
+                    <input type="text" value="{{$teacher->full_name}}" name="name" class="form-control" id="exampleInputEmail1" placeholder="Full name">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Speciality</label>
-                    <input type="text" name="speciality" class="form-control" id="exampleInputPassword1" placeholder="Speciality">
+                    <input type="text" value="{{ $teacher->speciality }}" name="speciality" class="form-control" id="exampleInputPassword1" placeholder="Speciality">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Yerars of experience </label>
-                    <input type="text" name="year_exp" class="form-control" id="exampleInputPassword1" placeholder="Years of exprence">
+                    <input type="text" value="{{$teacher->number_years_experience}}" name="year_exp" class="form-control" id="exampleInputPassword1" placeholder="Years of exprence">
                   </div>
            
                 </div>
@@ -130,7 +131,7 @@
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-              </form>
+                {!! Form::close() !!}
                                 </div>
                                 <div class="modal-footer justify-content-between">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -154,13 +155,18 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+            {!! Form::open(['route' => ['teachers.destroy',$teacher],"method"=>"Delete"])!!}
+
             <div class="modal-body">
               <p>Delete &hellip; {{$teacher->full_name}}</p>
+
             </div>
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-outline-light">Save changes</button>
+              <button type="submit" class="btn btn-outline-light">Delete</button>
             </div>
+                {!! Form::close() !!}
+
           </div>
           <!-- /.modal-content -->
         </div>

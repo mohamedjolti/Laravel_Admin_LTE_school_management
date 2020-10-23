@@ -38,8 +38,12 @@ class TeacherController extends Controller
     public function store(Request $request)
     {
         //
-
-        return redirect("home");
+        $teacher=new teacher;
+        $teacher->full_name=$request->input("name");
+        $teacher->speciality=$request->input("speciality");
+        $teacher->number_years_experience=$request->input("year_exp");
+        $teacher->save();
+        return redirect("teachers");
     
     }
 
@@ -72,9 +76,16 @@ class TeacherController extends Controller
      * @param  \App\Models\teacher  $teacher
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, teacher $teacher)
+    public function update(Request $request,teacher $teacher)
     {
         //
+        $teacher=teacher::find($teacher->id);
+        $teacher->full_name=$request->input("name");
+        $teacher->speciality=$request->input("speciality");
+        $teacher->number_years_experience=$request->input("year_exp");
+        $teacher->save();
+        return redirect("teachers");   
+
     }
 
     /**
@@ -86,5 +97,8 @@ class TeacherController extends Controller
     public function destroy(teacher $teacher)
     {
         //
-    }
+        $teacher=teacher::find($teacher->id);
+        $teacher->delete();
+        return redirect("teachers");   
+     }
 }

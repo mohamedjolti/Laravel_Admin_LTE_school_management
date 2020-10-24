@@ -197,7 +197,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="groupes" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Groupes </p>
                 </a>

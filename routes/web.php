@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers;
+use App\Http\Controllers\GroupeController;
 use App\Http\Controllers\TeacherController;
 
 /*
@@ -23,7 +24,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+//teacher routes
 Route::resource("teachers",TeacherController::class);
 
 Route::get("/teachers",[TeacherController::class,"index"]);
+
+//groupe routes
+Route::resource("groupes",GroupeController::class);
+
+Route::get("/groupes",[GroupeController::class,"index"]);

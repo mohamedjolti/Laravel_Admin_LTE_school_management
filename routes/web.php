@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers;
 use App\Http\Controllers\GroupeController;
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 
 /*
@@ -33,3 +34,8 @@ Route::get("/teachers",[TeacherController::class,"index"]);
 Route::resource("groupes",GroupeController::class);
 
 Route::get("/groupes",[GroupeController::class,"index"]);
+
+
+Route::resource("students",StudentController::class);
+
+Route::get("/students",[StudentController::class,"index"]);

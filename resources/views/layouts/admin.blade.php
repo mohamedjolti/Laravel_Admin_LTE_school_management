@@ -203,7 +203,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
+                <a href="students" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Students </p>
                 </a>

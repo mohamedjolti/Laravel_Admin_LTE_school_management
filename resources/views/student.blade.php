@@ -10,10 +10,10 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Teachers</a></li>
-              <li class="breadcrumb-item active">Teachers Dashbord</li>
+              <li class="breadcrumb-item"><a href="#">students</a></li>
+              <li class="breadcrumb-item active">students Dashbord</li>
               <button type="button" class="btn btn-block btn-info" data-toggle="modal" data-target="#modal-default">New</button>
-                 @include('Partials.teacher.create')
+                 @include('Partials.student.create')
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -39,29 +39,29 @@
                   <tr>
                     <th>Id</th>
                     <th>Full name</th>
-                    <th>Spiciality(s)</th>
-                    <th>years of exprience</th>
+                    <th>age</th>
+                    <th>groupe</th>
                     <th>L Operations  </th>
                   </tr>
                   </thead>
                   <tbody>
-                @foreach($teachers as $teacher)      
+                @foreach($students as $student)      
                   <tr>
-                    <td>{{$teacher->id}}</td>
-                    <td>{{$teacher->full_name}}
+                    <td>{{$student->id}}</td>
+                    <td>{{$student->full_name}}
                     </td>
-                    <td>{{$teacher->speciality}}</td>
-                    <td> {{$teacher->number_years_experience}}</td>
+                    <td>{{$student->age}}</td>
+                    <td> {{$student->groupe}}</td>
                     <td>
-                    <button type="button" class="btn btn-block btn-info" data-toggle="modal" data-target="#modal-info{{$teacher->id}}">Edit</button>
-                    <button type="button" class="btn btn-block btn-danger" data-toggle="modal" data-target="#modal-danger{{$teacher->id}}">Delete</button>
+                    <button type="button" class="btn btn-block btn-info" data-toggle="modal" data-target="#modal-info{{$student->id}}">Edit</button>
+                    <button type="button" class="btn btn-block btn-danger" data-toggle="modal" data-target="#modal-danger{{$student->id}}">Delete</button>
                  
-                  @include("Partials.teacher.update")
+                  @include("Partials.student.update")
 
        <!-- /.delete-dialog -->
 
 
-                  @include("Partials.teacher.delete")
+                  @include("Partials.student.delete")
 
     
 

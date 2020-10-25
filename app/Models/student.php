@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class groupe extends Model
+class student extends Model
 {
     use HasFactory;
 
-    public function students(){
-        return $this->hasMany(student::class);
+    public function groupe(){
+        return $this->belongsTo(groupe::class);
     }
 }
